@@ -4,4 +4,5 @@
     name: "{{ item }}"
     state: installed
     enablerepo: "{{ apache_enablerepo }}"
+    disablerepo: "{{ apache_disablerepo }}"
   with_items: "{{ apache_packages }}"
